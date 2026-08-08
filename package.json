@@ -1,7 +1,7 @@
 {
   "name": "@letslego/helix-connect",
   "version": "0.1.0",
-  "description": "Helix Connect \u2014 credential-brokered MCP/OpenAPI connections. Secrets never enter prompts.",
+  "description": "Helix Connect — credential-brokered MCP/OpenAPI connections. Secrets never enter prompts.",
   "type": "module",
   "license": "Apache-2.0",
   "repository": {
@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --import tsx --test test/**/*.test.ts",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
   },
   "engines": {
     "node": ">=20"
